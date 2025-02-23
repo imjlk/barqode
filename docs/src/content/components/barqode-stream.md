@@ -29,7 +29,7 @@ The `BarqodeStream` component continuously scans frames from a camera stream and
 	}
 
 	function onDetect(detectedCodes: DetectedBarcode[]) {
-		result = detectedCode.map((code) => detectedCode.rawValue).join(", ");
+		result = detectedCodes.map((detectedCode) => detectedCode.rawValue).join(", ");
 	}
 
 	function track(detectedCodes: DetectedBarcode[], ctx: CanvasRenderingContext2D) {
